@@ -4,3 +4,36 @@ html {
 body {
   font-family: sans-serif;
 }
+
+// .main {
+// Position tiene q ser el  ULTIMO recurso.
+// position: relative; // El Relative permite mover una caja desde su posicion original. IMPORTANTE recordar q los elementos no pierden el espacio reservado
+// top: -200px;
+// padding-top: 1px; // Los "H" siempre tiene un margin de 1rem y colapasa. Para evitar de que colapse hay que añadire 1px de padding y asi no colapsa.
+// background-color: orange;
+// opacity: 0.7;
+// height: 200px;
+// }
+
+.title {
+  // position: relative;
+  color: purple;
+  // text-align: center;
+  width: fit-content; // El w se adjusta a su contenido
+  margin-inline: auto;
+  padding-inline: 30px;
+  border-bottom: 10px solid orange;
+}
+
+// .title::after {
+//  --extra-size:30px;
+//   content: '';
+//   position: absolute;
+//   bottom: -5px;
+//   left: 0;
+//   left: calc(-(var(--extra-size)/ 2));
+//   width: 100%; // ya que es dinamico, si le doy el 100% se adjusta automaticamente a su padre
+//  width: calc(100% + var(--extra-size));
+//   height: 5px;
+//   background-color: orange;
+// }
